@@ -1,0 +1,39 @@
+/* Слайдер - Точки */
+.main-slider .slick-dots
+    position: absolute
+    bottom: 30px
+    left: 50%
+    transform: translateX(-50%)
+    display: flex
+    justify-content: center
+
+/* Слайдер - Активная точка */
+.main-slider .slick-dots li.slick-active
+    button
+        background-color: #ffffff
+
+/* Слайдер - Элемент точки */
+.main-slider .slick-dots li button
+    border-radius: 50%
+    background-color: transparent
+    border: 2px solid #ffffff
+    margin: 0 6px
+    font-size: 0
+    display: inline-block
+    height: 16px
+
+/* Кнопки */
+.button
+    width: 100%
+    padding: 17px 20px
+    background-color: #ffffff
+    border-radius: 7px 
+    color: #000000
+    font-size: 1.2rem
+    font-weight: bold
+    display: flex
+    justify-content: center
+    text-align: center
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.4)
+    &:hover
+        background-color: #e6e6e6
