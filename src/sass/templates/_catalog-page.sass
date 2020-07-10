@@ -1,0 +1,61 @@
+// Страница с категориями
+    
+.catalog
+    height: 100vh
+    background-color: rgba(0,0,0,0.05)
+    &-list
+        display: flex
+        flex-direction: column
+        &__item
+            margin-top: 15px
+            display: flex
+            border-radius: 7px
+            align-items: center
+            background-color: #ffffff
+        &__img
+            width: 120px
+            position: relative
+            padding: 0 0 20% 0
+            overflow: hidden
+            img 
+                width: 100%
+                height: 100%
+                object-fit: cover
+                position: absolute
+                top: 0
+                left: 0
+                border-radius: 7px 0 0 7px
+            @media ( min-width: 480px )
+                padding-bottom: 15%
+            @media ( min-width: 610px )
+                padding-bottom: 10%
+            @media ( min-width: 960px )
+                padding-bottom: 8%
+        &__title
+            margin-left: 15px
+            font-weight: bold
+    
+// Страница с подкатегориями
+
+.catalog
+    &-sublist
+        display: flex
+        flex-direction: column
+        &__item
+            padding: 15px 0
+            display: flex
+            justify-content: space-between
+            align-items: center
+            border-bottom: 1px solid rgba(0,0,0,0.11)
+            span 
+                padding: 0 0 0 10px
+                color: #a1a1a1
+
+// Страница с товарами
+
+.catalog 
+    &__cards-list
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        margin-bottom: 40px

@@ -7,13 +7,22 @@
         justify-content: space-around
         width: 100%
     &__link 
-        position: relative
-        top: 15px
         font-size: 12px
-        color: #BDBDBD
+        line-height: 1
+        color: #a1a1a1
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__icon
+        margin-bottom: 7px
+        width: 25px
+        height: 25px
+        fill: #a1a1a1
         
 .nav__link.active 
     color: #000000
+    .nav__icon 
+        fill: #000000
 
 .home
     &::before 
@@ -25,40 +34,4 @@
         width: 25px
         height: 25px
         background: url('../images/icons/home.svg') no-repeat
-        background-size: cover
-
-.catalog
-    &::before 
-        content: ''
-        position: absolute
-        top: -30px
-        left: 50%
-        transform: translateX(-50%)
-        width: 30px
-        height: 30px
-        background: url('../images/icons/catalog.svg') no-repeat
-        background-size: cover
-
-.bag
-    &::before 
-        content: ''
-        position: absolute
-        top: -30px
-        left: 50%
-        transform: translateX(-50%)
-        width: 27px
-        height: 27px
-        background: url('../images/icons/bag.svg') no-repeat
-        background-size: cover
-
-.user
-    &::before 
-        content: ''
-        position: absolute
-        top: -30px
-        left: 50%
-        transform: translateX(-50%)
-        width: 27px
-        height: 27px
-        background: url('../images/icons/user.svg') no-repeat
         background-size: cover

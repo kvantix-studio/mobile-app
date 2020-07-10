@@ -3,70 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная</title>
+    <title>Каталог</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 
     <div class="header">
 
-        <div class="search">
-            <div class="search-icon">
-                <img src="images/icons/search.svg" alt="Search">
-            </div>
-            <input class="search__input" type="search" name="search" placeholder="Найдите нужное">
-            <a href="#" class="search-camera">
-                <img src="images/icons/camera.svg" alt="Camera">
+        <div class="page-title">
+            <a class="page-title__return" href="catalog.html">
+                <svg class="page-title__icon"><use xlink:href="images/icons/sprite.svg#return"></use></svg>
             </a>
+            Каталог
         </div>
-        <!-- /.search -->
+        <!-- /.title -->
 
     </div>
     <!-- /.header -->
 
     <div class="content">
         
-        <div class="catalog">
+        <div class="main">
 
             <div class="container">
 
-                <div class="catalog-list">
+                <div class="catalog-sublist">
 
-                    <a href="catalog-sublist.html" class="catalog-list__item">
-                        <div class="catalog-list__img">
-                            <img src="images/cards/card-1.jpg" alt="">
-                        </div>
-                        <div class="catalog-list__title">
-                            Детские товары
-                        </div>
+                    <a href="catalog-list.html" class="catalog-sublist__item">
+                        Альбомы для коллекционеров
+                        <span>125</span>
                     </a>
 
-                    <a href="catalog-sublist.html" class="catalog-list__item">
-                        <div class="catalog-list__img">
-                            <img src="images/cards/card-1.jpg" alt="">
-                        </div>
-                        <div class="catalog-list__title">
-                            Канцтовары
-                        </div>
+                    <a href="catalog-list.html" class="catalog-sublist__item">
+                        Бумага и бумажная продукция
+                        <span>45</span>
                     </a>
 
-                    <a href="catalog-sublist.html" class="catalog-list__item">
-                        <div class="catalog-list__img">
-                            <img src="images/cards/card-1.jpg" alt="">
-                        </div>
-                        <div class="catalog-list__title">
-                            Одежда и обувь
-                        </div>
+                    <a href="catalog-list.html" class="catalog-sublist__item">
+                        Офисная техника
+                        <span>12</span>
+                    </a>
+
+                    <a href="catalog-list.html" class="catalog-sublist__item">
+                        Офисные принадлежности
+                        <span>180</span>
                     </a>
 
                 </div>
-                <!-- /.catalog-list -->
+                <!-- /.catalog__sublist -->
 
             </div>
             <!-- /.container -->
 
         </div>
-        <!-- /.catalog -->
+        <!-- /.main -->
 
     </div>
     <!-- /.content -->
